@@ -1,0 +1,34 @@
+{{>partials/header}}
+    <h2>Adicionar Produto</h2>
+
+<form method="POST" action="/novo-produto-action" class="container  my-custom-form">
+  <div class="mb-3">
+    <label class="form-label">Nome do Produto:</label>
+    <input type="text" class="form-control" name="name" placeholder="Digite nome do produto">
+  </div>
+  
+  <div class="mb-3">
+    <label class="form-label">Categoria:</label>
+    <input type="text" class="form-control" name="category" placeholder="Plural: brincos, colares ou aneis">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Quantidade:</label>
+    <input type="number" class="form-control" name="amount" placeholder="Ex: 10">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Valor:</label>
+    <input type="text" class="form-control" name="value" placeholder="R$">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Cor:</label>
+    <input type="text" class="form-control" name="color" placeholder="Ex: Prata">
+  </div>
+  <button type="submit" class="btn btn-primary">Adicionar</button>
+</form>
+
+<br>
+
+{{>partials/footer}}

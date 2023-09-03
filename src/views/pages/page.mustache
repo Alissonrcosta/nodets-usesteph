@@ -1,0 +1,53 @@
+{{>partials/header}}
+{{#banner}}
+<section class="banner" style="background-image: url('images/{{background}}')">{{title}}</section>
+<h2>{{title}}</h2>
+{{/banner}}
+
+
+<hr>
+
+
+
+<div class="container list">
+    {{#products}}
+    <a data-bs-toggle="modal" data-bs-target="#modal{{id}}">
+        <div class="item">
+            <img src="images/anel.jpg" class="item--image" />
+            <div class="item--name">{{name}}</div>
+            <div class="item--quantidade"><strong>Quantidade:</strong> {{amount}}</div>
+            <div class="item--value"><strong>Valor:</strong> R${{value}}</div>
+        </div></a>
+
+            <!-- Modal específico para este item -->
+            <div class="modal" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">{{name}}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <img src="images/anel.jpg" class="item--image" />
+                            
+                            <div class="item--quantidade"><strong>Quantidade:</strong> {{amount}}</div>
+                            <div class="item--value"><strong>Valor:</strong> R${{value}}</div>
+                            <div class="item--color"><strong>Cor:</strong> {{color}}</div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <a type="button" href="/editar-produto/{{id}}"class="btn btn-primary">Editar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do modal específico -->
+        
+    
+    {{/products}}
+</div>
+
+</div>
+
+{{>partials/footer}}

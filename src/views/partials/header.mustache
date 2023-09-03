@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use.Steph - women for women</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png/jpg" href="/images/logo.jpg" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="/" class="logo">Use.Steph</a>
+        <form class="nav-form" method="GET" action="/search">
+            <input type="search" name="q" placeholder="Buscar Produto" />
+            <a href="/novo-produto"><button type="button" class="addProduct" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
+            Adicionar Produto
+        </button></a>
+        </form>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li class="{{#menu.all}}active{{/menu.all}}"><a href="/">Home</a></li>
+        <li class="{{#menu.earrings}}active{{/menu.earrings}}"><a href="/earrings">Brincos</a></li>
+        <li class="{{#menu.chains}}active{{/menu.chains}}"><a href="chains">Colares</a></li>
+        <li class="{{#menu.rings}}active{{/menu.rings}}"><a href="rings">Anéis</a></li>
+    </ul>
+</nav>
