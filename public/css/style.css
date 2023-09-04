@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 :root {
+    
     --bglink: rgba(0, 0, 0, 0.3);
     --darkbg: #FFF;
     --lightbg: #000;
@@ -174,12 +175,42 @@ footer {
     max-width: 500px; /* Define a largura máxima desejada */
     margin: 0 auto; /* Centraliza o formulário horizontalmente */
   }
+.modal-info{
+    margin-top: 15px;
+}
+
+.modal-info strong{
+    font-size: 15px;
+}
+.modal-info p{
+    font-size: 15px;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content:flex-end;
+    gap: 10px;
+}
+
+.btn-action{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.btn-deletar a{
+    margin-left: 230%;
+}
+
+
+
 
 @media (max-width: 900px) {
     .list {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+
 
 @media (max-width: 768px) {
     .list {

@@ -11,6 +11,8 @@ router.get('/novo-produto', PageController.addProduct);
 router.post('/novo-produto-action', PageController.addProductAction);
 router.get('/editar-produto/:id', PageController.updateProduct);
 router.post('/editar-produto-action/:id', PageController.updateProductAction);
+router.get('/editar-produto/:id', PageController.updateProduct);
+router.get('/deletar-produto/:id', PageController.deleteProduct);
 
 router.get('/search', SearchController.search);
 

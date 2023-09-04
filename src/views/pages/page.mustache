@@ -28,16 +28,17 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-
+                            <div class="modal-img"></div>
                             <img src="images/anel.jpg" class="item--image" />
-                            
-                            <div class="item--quantidade"><strong>Quantidade:</strong> {{amount}}</div>
-                            <div class="item--value"><strong>Valor:</strong> R${{value}}</div>
-                            <div class="item--color"><strong>Cor:</strong> {{color}}</div>
+                            <div class="modal-info">
+                               <div class="item--quantidade"><p><strong>Quantidade:</strong> {{amount}}</p></div>
+                               <div class="item--value"><p><strong>Valor:</strong> R${{value}}</p></div>
+                               <div class="item--color"><p><strong>Cor:</strong> {{color}}</p></div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                            <a type="button" href="/editar-produto/{{id}}"class="btn btn-primary">Editar</a>
+                            <a type="button" href="editar-produto/{{id}}"class="btn btn-primary">Editar</a>
                         </div>
                     </div>
                 </div>
