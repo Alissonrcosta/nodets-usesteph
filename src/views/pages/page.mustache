@@ -13,7 +13,7 @@
     {{#products}}
     <a data-bs-toggle="modal" data-bs-target="#modal{{id}}">
         <div class="item">
-            <img src="images/anel.jpg" class="item--image" />
+            <img src="media/{{image}}" class="item--image" />
             <div class="item--name">{{name}}</div>
             <div class="item--quantidade"><strong>Quantidade:</strong> {{amount}}</div>
             <div class="item--value"><strong>Valor:</strong> R${{value}}</div>
@@ -29,7 +29,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="modal-img"></div>
-                            <img src="images/anel.jpg" class="item--image" />
+                            <img src="media/{{image}}" class="item--image" />
                             <div class="modal-info">
                                <div class="item--quantidade"><p><strong>Quantidade:</strong> {{amount}}</p></div>
                                <div class="item--value"><p><strong>Valor:</strong> R${{value}}</p></div>

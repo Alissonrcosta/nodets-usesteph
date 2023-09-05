@@ -10,6 +10,7 @@ export interface ProductInstance extends Model {
     amount: number;
     value: number;
     color: string;
+    image: string;
 }
 
 export const Product = sequelize.define<ProductInstance>("Product", {
@@ -47,7 +48,10 @@ export const Product = sequelize.define<ProductInstance>("Product", {
     },
     color: {
         type: DataTypes.STRING
-    }
+    },
+    image: {
+        type: DataTypes.STRING
+    },
 }, {
     tableName: 'products',
     timestamps: false

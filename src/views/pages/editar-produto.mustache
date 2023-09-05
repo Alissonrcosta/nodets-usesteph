@@ -1,7 +1,7 @@
 {{>partials/header}}
     <h2>Atualizar Produto</h2>
 {{#results}}
-<form method="POST" action="/editar-produto-action/{{results.id}}" class="container  my-custom-form">
+<form method="POST" action="/editar-produto-action/{{results.id}}" class="container  my-custom-form" enctype="multipart/form-data">
   <div class="mb-3">
     <label class="form-label">Nome do Produto:</label>
     <input type="text" class="form-control" name="name" value="{{results.name}}">
@@ -26,6 +26,12 @@
     <label class="form-label">Cor:</label>
     <input type="text" class="form-control" name="color" value="{{results.color}}">
   </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="image">Imagem:</label>
+    <input type="file" class="form-control" name="image" id="image" value="media/{{results.image}}">
+  </div>
+
   <div class="btn-action">
   <button type="submit" class="btn btn-primary">Atualizar</button>
   <a type="button" href="/"class="btn btn-secondary">Cancelar</a>
